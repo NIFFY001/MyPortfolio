@@ -36,7 +36,11 @@ function NavBar() {
           </button>
         </Link>
       </div>
-      <Link to="" target="blank" className="hidden md:block">
+      <Link
+        to="https://drive.google.com/file/d/1qREtwVGYbwqbxOYG6wmkz58M3-VzTNzi/view?usp=drivesdk"
+        target="blank"
+        className="hidden md:block"
+      >
         <button className=" font-semibold py-2 px-2 md:px-5 hover:border hover:border-white rounded-2xl text-xs md:text-sm bg-gradient-to-r from-[#FFA500] to-[#FF0000]">
           Download Resume
         </button>
@@ -55,7 +59,10 @@ function NavBar() {
           <Link to="/cont" className="hover:border-b hover:pb-1 text-sm">
             Contact
           </Link>
-          <Link to="" target="blank">
+          <Link
+            to="https://drive.google.com/file/d/1qREtwVGYbwqbxOYG6wmkz58M3-VzTNzi/view?usp=drivesdk"
+            target="blank"
+          >
             <button className="hover:bg-[#fff] text-[#D9D9D9] font-semibold py-2 px-5 hover:border hover:border-white rounded-2xl text-sm bg-gradient-to-r from-[#FFA500] to-[#FF0000]">
               Download Resume
             </button>

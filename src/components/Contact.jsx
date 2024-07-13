@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import contact from "/src/assets/contact.png";
 import contactme from "/src/assets/contactme.png";
+import socials from "/src/assets/socials.png";
 import ContactForm from "../components/ContactForm";
 
 function Contact() {
@@ -17,11 +18,12 @@ function Contact() {
             <div>
               <img src={contact} alt="Contact" />
             </div>
-            <div className="text-white text-center md:text-left">
+            <div className="text-white ">
               <h1 className="text-white mb-5 text-3xl">Contact Details</h1>
               <p className="mb-5">📞 : 09152043037</p>
               <p className="mb-10">📧 : victorakinsanmi2018@gmail.com</p>
-              <p className="text-xl">Follow Me On</p>
+              <p className="text-xl mb-10">Follow Me On</p>
+              <img src={socials}></img>
             </div>
           </div>
 
