@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { FaBars } from "react-icons/fa"; // You can use any menu icon you like
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,11 +30,11 @@ function NavBar() {
             Projects
           </button>
         </a>
-        <a href="/cont">
+        <Link to="/cont">
           <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
             Contact
           </button>
-        </a>
+        </Link>
       </div>
       <a href="" target="blank" className="hidden md:block">
         <button className=" font-semibold py-2 px-2 md:px-5 hover:border hover:border-white rounded-2xl text-xs md:text-sm bg-gradient-to-r from-[#FFA500] to-[#FF0000]">
@@ -51,9 +52,9 @@ function NavBar() {
           <a href="" className="hover:border-b hover:pb-1 text-sm">
             Projects
           </a>
-          <a href="/cont" className="hover:border-b hover:pb-1 text-sm">
+          <Link to="/cont" className="hover:border-b hover:pb-1 text-sm">
             Contact
-          </a>
+          </Link>
           <a href="" target="blank">
             <button className="hover:bg-[#fff] text-[#D9D9D9] font-semibold py-2 px-5 hover:border hover:border-white rounded-2xl text-sm bg-gradient-to-r from-[#FFA500] to-[#FF0000]">
               Download Resume
