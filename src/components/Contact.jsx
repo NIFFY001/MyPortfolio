@@ -20,8 +20,14 @@ function Contact() {
             </div>
             <div className="text-white ">
               <h1 className="text-white mb-5 text-3xl">Contact Details</h1>
-              <p className="mb-5">📞 : 09152043037</p>
-              <p className="mb-10">📧 : victorakinsanmi2018@gmail.com</p>
+              <div className="mb-5">
+                <a href="tel:09152043037">📞 : 09152043037</a>
+              </div>
+              <div className="mb-10">
+                <a href="mailto:victorakinsanmi2018@gmail.com">
+                  📧 : victorakinsanmi2018@gmail.com
+                </a>
+              </div>
               <p className="text-xl mb-10">Follow Me On</p>
               <img src={socials}></img>
             </div>
