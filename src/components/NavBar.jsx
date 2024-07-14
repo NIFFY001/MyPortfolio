@@ -20,7 +20,7 @@ function NavBar() {
       </Link>
 
       <div className="hidden md:flex items-center gap-4 md:gap-10">
-        <Link to href="">
+        <Link to="/abt">
           <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
             About
           </button>
@@ -50,7 +50,7 @@ function NavBar() {
       </button>
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-[#080808] text-[#D9D9D9] flex flex-col items-center gap-4 py-5">
-          <Link to="" className="hover:border-b hover:pb-1 text-sm">
+          <Link to="/abt" className="hover:border-b hover:pb-1 text-sm">
             About
           </Link>
           <Link to="" className="hover:border-b hover:pb-1 text-sm">

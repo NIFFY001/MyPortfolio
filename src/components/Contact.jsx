@@ -9,7 +9,7 @@ function Contact() {
   return (
     <>
       <NavBar />
-      <div className="bg-black min-h-[100vh]">
+      <div className="bg-black min-h-[100vh] pt-10">
         <div className="md:px-20 px-5">
           <img src={contactme}></img>
         </div>
