@@ -25,7 +25,7 @@ function NavBar() {
             About
           </button>
         </Link>
-        <Link to="">
+        <Link to="/pro">
           <button className="hover:border-b hover:pb-1 text-xs md:text-sm">
             Projects
           </button>
@@ -53,7 +53,7 @@ function NavBar() {
           <Link to="/abt" className="hover:border-b hover:pb-1 text-sm">
             About
           </Link>
-          <Link to="" className="hover:border-b hover:pb-1 text-sm">
+          <Link to="/pro" className="hover:border-b hover:pb-1 text-sm">
             Projects
           </Link>
           <Link to="/cont" className="hover:border-b hover:pb-1 text-sm">

@@ -3,6 +3,10 @@ import NavBar from "./NavBar";
 import contact from "/src/assets/contact.png";
 import contactme from "/src/assets/contactme.png";
 import socials from "/src/assets/socials.png";
+import linkedin from "/src/assets/linkedin.png";
+import github from "/src/assets/github.png";
+import instagram from "/src/assets/instagram.png";
+
 import ContactForm from "../components/ContactForm";
 
 function Contact() {
@@ -29,7 +33,17 @@ function Contact() {
                 </a>
               </div>
               <p className="text-xl mb-10">Follow Me On</p>
-              <img src={socials}></img>
+              <div className="flex gap-3">
+                <a href="https://github.com/NIFFY001">
+                  <img src={github}></img>
+                </a>
+                <a href="https://www.linkedin.com/in/akinsanmi-victor-oluwanifemi-4ba3a61b7/">
+                  <img src={linkedin}></img>
+                </a>
+                <a href="https://www.instagram.com/iam_victorakinsanmi?igsh=ZXlqZDBweng0OGxp&utm_source=qr">
+                  <img src={instagram}></img>
+                </a>
+              </div>
             </div>
           </div>
 

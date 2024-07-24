@@ -7,6 +7,13 @@ import ContactForm from "../components/ContactForm";
 import Contact from "../components/Contact";
 import about from "/src/assets/about.png";
 import aboutimg from "/src/assets/aboutimg.png";
+import Projects from "../components/Projects";
+import zealluck from "../assets/zealluck.png";
+import spaceserve from "../assets/spaceserve.png";
+import samtlgroup from "../assets/samtlgroup.png";
+import axess from "../assets/axess.png";
+import axessweb from "../assets/axessweb.png";
+import projects from "../assets/projects.png";
 
 export default function Home() {
   return (
@@ -31,7 +38,7 @@ export default function Home() {
             <p className="text-white text-2xl mb-2">
               Web Designs For Your Brand
             </p>
-            <p className="mb-5 text-white md:w-[90%] text-xl">
+            <p className="mb-5 text-white md:w-[90%] text-xl ">
               Transforming your online presence with innovative and visually
               captivating websites. Let us bring your brand's vision to life
               through exceptional web design.
@@ -41,7 +48,6 @@ export default function Home() {
             <img src={intro}></img>
           </div>
         </div>
-
         <div className="gap-10 flex flex-col md:flex-row md:px-20 px-5  ">
           <div className="">
             <img src={about} className=""></img>
