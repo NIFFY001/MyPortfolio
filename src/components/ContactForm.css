@@ -1,0 +1,163 @@
+/* =========================================
+   MODERN CONTACT FORM
+========================================= */
+
+.modern-contact-form {
+  width: 100%;
+}
+
+/* =========================================
+     FIELD
+  ========================================= */
+
+.form-field {
+  position: relative;
+
+  margin-bottom: 30px;
+}
+
+.form-field label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: rgba(185, 175, 255, 0.65);
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 0;
+
+  border: none;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-family: "Inter", sans-serif;
+
+  font-size: 13px;
+
+  resize: vertical;
+
+  transition: border-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-bottom-color: #9c93ff;
+
+  padding-left: 5px;
+}
+
+.form-field textarea {
+  min-height: 120px;
+
+  line-height: 1.7;
+}
+
+/* =========================================
+     SUBMIT BUTTON
+  ========================================= */
+
+.contact-submit {
+  width: 100%;
+
+  min-height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 18px;
+
+  margin-top: 8px;
+
+  border: 1px solid rgba(185, 175, 255, 0.35);
+
+  border-radius: 3px;
+
+  background: linear-gradient(100deg, #7b61ff, #9c93ff);
+
+  color: #ffffff;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.02em;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-submit:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 255, 255, 0.5);
+
+  box-shadow: 0 12px 35px rgba(123, 97, 255, 0.25);
+}
+
+.submit-arrow {
+  font-size: 18px;
+
+  transition: transform 0.3s ease;
+}
+
+.contact-submit:hover .submit-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================
+     MOBILE
+  ========================================= */
+
+@media (max-width: 767px) {
+  .form-field {
+    margin-bottom: 25px;
+  }
+
+  .contact-submit {
+    min-height: 50px;
+  }
+}
+
+/* =========================================
+     REDUCED MOTION
+  ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-submit,
+  .submit-arrow,
+  .form-field input,
+  .form-field textarea {
+    transition: none;
+  }
+}

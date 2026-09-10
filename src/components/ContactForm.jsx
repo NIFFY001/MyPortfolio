@@ -1,64 +1,73 @@
 import React, { useState } from "react";
+import "./ContactForm.css";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [nameSpace, setNameSpace] = useState(2); // default space
 
-  const handleSendEmail = () => {
+  const handleSendEmail = (e) => {
+    e.preventDefault();
+
     const subject = "Enquiry Form";
-    const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+    const body = `Name: ${name}
+Email: ${email}
+
+Message:
+${message}`;
+
     window.location.href = `mailto:victorakinsanmi2018@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10">
-      <form>
-        <div className="mb-4">
-          <label className="block text-white"></label>
-          <input
-            type="text"
-            className={`w-full px-${nameSpace} py-2 border-b border-gray-300 bg-transparent`}
-            placeholder="Name"
-            style={{ borderBottomColor: "#CCCCCC" }}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-white"></label>
-          <input
-            type="email"
-            className="w-full px-2 py-2 border-b border-gray-300 bg-transparent"
-            placeholder="Email"
-            style={{ borderBottomColor: "#CCCCCC" }}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-white"></label>
-          <textarea
-            className="w-full px-2 py-2 border-b border-gray-300 bg-transparent"
-            placeholder="Message"
-            rows="2"
-            style={{ borderBottomColor: "#CCCCCC" }}
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-        </div>
-        <button
-          type="button"
-          className="bg-gradient-to-r from-[#FFA500] to-[#FF0000] text-white font-bold py-2 px-4 rounded w-full"
-          onClick={handleSendEmail}
-        >
-          Send Email
-        </button>
-      </form>
-    </div>
+    <form className="modern-contact-form" onSubmit={handleSendEmail}>
+      <div className="form-field">
+        <label htmlFor="name">Your name</label>
+
+        <input
+          id="name"
+          type="text"
+          placeholder="John Doe"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+      </div>
+
+      <div className="form-field">
+        <label htmlFor="email">Email address</label>
+
+        <input
+          id="email"
+          type="email"
+          placeholder="john@example.com"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+      </div>
+
+      <div className="form-field">
+        <label htmlFor="message">Your message</label>
+
+        <textarea
+          id="message"
+          placeholder="Tell me a little about your project..."
+          rows="5"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
+      </div>
+
+      <button type="submit" className="contact-submit">
+        <span>Send message</span>
+        <span className="submit-arrow">↗</span>
+      </button>
+    </form>
   );
 };
 

@@ -6,16 +6,14 @@ import Pro from "./pages/Pro";
 
 function App() {
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="cont" element={<Cont />} />
-          <Route path="abt" element={<Abt />} />
-          <Route path="pro" element={<Pro />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cont" element={<Cont />} />
+        <Route path="/abt" element={<Abt />} />
+        <Route path="/pro" element={<Pro />} />
+      </Routes>
+    </Router>
   );
 }
 
